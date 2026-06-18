@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function navigateTo(viewId, event) {
   if (event) event.preventDefault();
 
+  // Close dashboard sidebar if open
+  closeDashboardSidebar();
+
   // 1. Hide all views, remove active classes
   const views = document.querySelectorAll('.app-view');
   views.forEach(view => view.classList.remove('active-view'));
@@ -84,6 +87,9 @@ function updateHeaderActiveLink(viewId) {
 /* Dashboard Tab Switches */
 function switchDashboardTab(tabId, event) {
   if (event) event.preventDefault();
+
+  // Close dashboard sidebar if open
+  closeDashboardSidebar();
 
   // Find dashboard container (user or admin)
   const isUserTab = tabId.startsWith('user');
@@ -465,8 +471,31 @@ function updateMapTheme(isLight) {
   mapTileLayer.setUrl(newUrl);
 }
 
+function toggleDashboardSidebar() {
+  const activeDashboard = document.querySelector('.dashboard-layout-view.active-view');
+  if (activeDashboard) {
+    const sidebar = activeDashboard.querySelector('.dashboard-sidebar');
+    const overlay = activeDashboard.querySelector('.dashboard-sidebar-overlay');
+    if (sidebar) {
+      sidebar.classList.toggle('sidebar-open');
+    }
+    if (overlay) {
+      overlay.classList.toggle('active');
+    }
+  }
+}
+
+function closeDashboardSidebar() {
+  const sidebars = document.querySelectorAll('.dashboard-sidebar');
+  sidebars.forEach(sidebar => sidebar.classList.remove('sidebar-open'));
+  const overlays = document.querySelectorAll('.dashboard-sidebar-overlay');
+  overlays.forEach(overlay => overlay.classList.remove('active'));
+}
+
 // Global Exports for inline HTML onclick handlers
 window.navigateTo = navigateTo;
 window.switchDashboardTab = switchDashboardTab;
 window.handleContactSubmit = handleContactSubmit;
 window.moveKanbanCard = moveKanbanCard;
+window.toggleDashboardSidebar = toggleDashboardSidebar;
+window.closeDashboardSidebar = closeDashboardSidebar;

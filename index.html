@@ -1150,10 +1150,19 @@
       
       <!-- Split Dashboard Shell -->
       <div class="dashboard-shell-container">
+        <!-- Sidebar Overlay for Mobile -->
+        <div class="dashboard-sidebar-overlay" onclick="toggleDashboardSidebar()"></div>
         
         <!-- Sidebar Panel (Fixed, not scrollable) -->
         <aside class="dashboard-sidebar">
           <div class="sidebar-top">
+            <!-- Close Button for Mobile -->
+            <button class="dashboard-close-btn" onclick="toggleDashboardSidebar()" aria-label="Close Sidebar">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
             <!-- Sidebar Logo -->
             <a href="#" class="sidebar-logo" onclick="navigateTo('home-1', event)">
               <svg width="32" height="32" viewBox="0 0 100 100" class="logo-svg">
@@ -1163,7 +1172,7 @@
               </svg>
               <div class="logo-text-wrapper">
                 <span class="logo-title">VERTEX</span>
-                <span class="logo-subtitle">CANDIDATE</span>
+                <span class="logo-subtitle">SEARCH GROUP</span>
               </div>
             </a>
             <!-- Candidate Fast Info -->
@@ -1214,7 +1223,14 @@
           
           <!-- Top Bar inside Dashboard -->
           <div class="dashboard-topbar">
-            <h2 class="dash-title font-serif">Executive Candidate Workspace</h2>
+            <div class="dashboard-topbar-left">
+              <button class="dashboard-menu-btn" onclick="toggleDashboardSidebar()" aria-label="Toggle Dashboard Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+              <h2 class="dash-title font-serif">Executive Candidate Workspace</h2>
+            </div>
             
             <div class="topbar-controls">
               <!-- Inline Dark/Light Toggle -->
@@ -1466,10 +1482,19 @@
       
       <!-- Split Dashboard Shell -->
       <div class="dashboard-shell-container">
+        <!-- Sidebar Overlay for Mobile -->
+        <div class="dashboard-sidebar-overlay" onclick="toggleDashboardSidebar()"></div>
         
         <!-- Sidebar Panel (Fixed, not scrollable) -->
         <aside class="dashboard-sidebar">
           <div class="sidebar-top">
+            <!-- Close Button for Mobile -->
+            <button class="dashboard-close-btn" onclick="toggleDashboardSidebar()" aria-label="Close Sidebar">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
             <!-- Sidebar Logo -->
             <a href="#" class="sidebar-logo" onclick="navigateTo('home-1', event)">
               <svg width="32" height="32" viewBox="0 0 100 100" class="logo-svg">
@@ -1479,7 +1504,7 @@
               </svg>
               <div class="logo-text-wrapper">
                 <span class="logo-title">VERTEX</span>
-                <span class="logo-subtitle">ENTERPRISE</span>
+                <span class="logo-subtitle">SEARCH GROUP</span>
               </div>
             </a>
             <!-- Recruiter Info -->
@@ -1529,7 +1554,14 @@
           
           <!-- Top Bar inside Dashboard -->
           <div class="dashboard-topbar">
-            <h2 class="dash-title font-serif">Enterprise Recruiter Analytics</h2>
+            <div class="dashboard-topbar-left">
+              <button class="dashboard-menu-btn" onclick="toggleDashboardSidebar()" aria-label="Toggle Dashboard Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
+              <h2 class="dash-title font-serif">Enterprise Recruiter Analytics</h2>
+            </div>
             
             <div class="topbar-controls">
               <!-- Inline Dark/Light Toggle -->
