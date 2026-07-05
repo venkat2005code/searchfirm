@@ -61,6 +61,9 @@
             <a href="#" class="nav-link" onclick="navigateTo('services', event)">Services</a>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link" onclick="navigateTo('services', event)">Expertise</a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link" onclick="navigateTo('contact', event)">Contact</a>
           </li>
           <li class="nav-item has-dropdown">
@@ -141,6 +144,9 @@
           <a href="#" class="mobile-nav-link" onclick="navigateTo('services', event)">Services</a>
         </li>
         <li class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link" onclick="navigateTo('services', event)">Expertise</a>
+        </li>
+        <li class="mobile-nav-item">
           <a href="#" class="mobile-nav-link" onclick="navigateTo('contact', event)">Contact</a>
         </li>
 
@@ -206,7 +212,7 @@
       
       <!-- Section 1: Hero Section (Retained C-Suite Search) -->
       <section class="hero-section h1-hero-bg" style="--hero-bg: url('f15.jpg');">
-        <div class="container hero-content">
+        <div class="container hero-content text-center" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
           <div class="hero-tagline">Discreet Executive Placements</div>
           <h1 class="hero-title font-serif">Sourcing Elite Leadership for Global Enterprise</h1>
           <p class="hero-description">We serve as retained advisors to Fortune 500 boards, private equity general partners, and high-growth disruptors, aligning legendary visionaries to business-critical mandates.</p>
@@ -253,6 +259,7 @@
             <span class="section-subtitle">Core Expertise</span>
             <h2 class="section-title font-serif">Deep-Dive Industry Practice Sectors</h2>
             <div class="section-divider"></div>
+            <p class="section-desc" style="max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; color: var(--light-slate);">Sectors included: Financial Services, Technology & AI, Life Sciences & Health, Industrial & Energy</p>
           </div>
           <div class="sectors-grid">
             <div class="sector-card" style="--card-bg-img: url('f1.jpg');">
@@ -988,6 +995,12 @@
       <!-- Section 3: Candidate Registry Form (Secure Resume Drop) -->
       <section class="candidate-drop-section section-padding bg-slate-950">
         <div class="container secure-grid">
+          <div class="form-instructions">
+            <span class="section-subtitle">Executive Registry</span>
+            <h2 class="font-serif">Candidate Portal Registry</h2>
+            <p>We welcome submissions from established executives ($250k+ base compensation) looking for discrete, off-market advisory options. By selecting <strong>Anonymize Profile</strong>, we will hide your name and current employer, showing only your high-level competencies until you grant specific approval.</p>
+          </div>
+
           <div class="form-wrapper">
             <form id="secure-candidate-form" class="secure-form" onsubmit="handleContactSubmit(event, 'candidate')">
               <div class="form-row">
@@ -1018,12 +1031,6 @@
               <h4>Executive Credentials Vaulted</h4>
               <p>Your candidate profile has been cryptographically vaulted. Status: <strong>Anonymized & Vetted</strong>.</p>
             </div>
-          </div>
-
-          <div class="form-instructions">
-            <span class="section-subtitle">Executive Registry</span>
-            <h2 class="font-serif">Candidate Portal Registry</h2>
-            <p>We welcome submissions from established executives ($250k+ base compensation) looking for discrete, off-market advisory options. By selecting <strong>Anonymize Profile</strong>, we will hide your name and current employer, showing only your high-level competencies until you grant specific approval.</p>
           </div>
         </div>
       </section>
@@ -1260,6 +1267,10 @@
 
           <!-- TAB CONTENT: OVERVIEW -->
           <div id="tab-user-overview" class="dashboard-tab-content active-tab-content">
+            <div class="dashboard-welcome" style="margin-bottom: 2rem;">
+              <h3 class="font-serif" style="font-size: 1.5rem; color: var(--gold-color);">Welcome back, Richard!</h3>
+              <p style="color: var(--light-slate);">Here is your executive workspace summary.</p>
+            </div>
             <!-- Alert bar / Status -->
             <div class="dashboard-status-banner">
               <span class="banner-pulse"></span>
@@ -1846,7 +1857,7 @@
               <label for="login-password">Access Passcode</label>
               <input type="password" id="login-password" required placeholder="••••••••">
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Verify & Enter</button>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
           </form>
 
           <div class="auth-divider">
@@ -1861,6 +1872,10 @@
             <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               <span>Facebook</span>
+            </button>
+            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" style="display:none"/><path d="M16.365 1.157c-1.077 0-2.26.544-2.916 1.258-.6.653-1.09 1.638-.934 2.58.995.05 2.05-.444 2.705-1.144.622-.656 1.077-1.677.925-2.617C15.86 1.22 15.65 1.22 15.6 1.22M15.842 16.79c-1.127.065-2.075-1.39-2.075-1.39s-.91 1.41-2.096 1.34c-1.14-.065-2.222-1.096-2.85-2.504-1.294-2.856-.376-7.098 1.942-7.234 1.125-.065 2.046 1.09 2.046 1.09s.85-1.143 2.05-1.09c1.2.054 2.22 1.096 2.22 1.096s-1.01 1.09-1.056 3.197c-.05 2.112 1.967 2.946 1.967 2.946s-1.076 2.483-2.148 2.55"/></svg>
+              <span>Apple</span>
             </button>
           </div>
 
@@ -1920,25 +1935,21 @@
           <p class="auth-subtitle">Register your details securely with VERTEX Search Group.</p>
 
           <form class="auth-form" onsubmit="navigateTo('user-dashboard', event)">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="register-name">Full Name</label>
-                <input type="text" id="register-name" required placeholder="e.g. Richard Sterling">
-              </div>
-              <div class="form-group">
-                <label for="register-email">Secure Email</label>
-                <input type="email" id="register-email" required placeholder="name@domain.secure">
-              </div>
+            <div class="form-group">
+              <label for="register-name">Full Name</label>
+              <input type="text" id="register-name" required placeholder="e.g. Richard Sterling">
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="register-password">Passcode</label>
-                <input type="password" id="register-password" required placeholder="••••••••">
-              </div>
-              <div class="form-group">
-                <label for="register-confirm">Confirm Passcode</label>
-                <input type="password" id="register-confirm" required placeholder="••••••••">
-              </div>
+            <div class="form-group">
+              <label for="register-email">Secure Email</label>
+              <input type="email" id="register-email" required placeholder="name@domain.secure">
+            </div>
+            <div class="form-group">
+              <label for="register-password">Passcode</label>
+              <input type="password" id="register-password" required placeholder="••••••••">
+            </div>
+            <div class="form-group">
+              <label for="register-confirm">Confirm Passcode</label>
+              <input type="password" id="register-confirm" required placeholder="••••••••">
             </div>
             <button type="submit" class="btn btn-primary btn-block">Register Credentials</button>
           </form>
@@ -1955,6 +1966,10 @@
             <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               <span>Facebook</span>
+            </button>
+            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" style="display:none"/><path d="M16.365 1.157c-1.077 0-2.26.544-2.916 1.258-.6.653-1.09 1.638-.934 2.58.995.05 2.05-.444 2.705-1.144.622-.656 1.077-1.677.925-2.617C15.86 1.22 15.65 1.22 15.6 1.22M15.842 16.79c-1.127.065-2.075-1.39-2.075-1.39s-.91 1.41-2.096 1.34c-1.14-.065-2.222-1.096-2.85-2.504-1.294-2.856-.376-7.098 1.942-7.234 1.125-.065 2.046 1.09 2.046 1.09s.85-1.143 2.05-1.09c1.2.054 2.22 1.096 2.22 1.096s-1.01 1.09-1.056 3.197c-.05 2.112 1.967 2.946 1.967 2.946s-1.076 2.483-2.148 2.55"/></svg>
+              <span>Apple</span>
             </button>
           </div>
 
