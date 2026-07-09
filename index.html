@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="dark-theme">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VERTEX Search Group | Elite Executive Headhunters</title>
-  <meta name="description" content="VERTEX Search Group is a premier, globally retained executive search and board advisory firm. We identify, assess, and place world-class leaders across key global industries with absolute discretion.">
-  
+  <meta name="description"
+    content="VERTEX Search Group is a premier, globally retained executive search and board advisory firm. We identify, assess, and place world-class leaders across key global industries with absolute discretion.">
+
   <!-- Premium Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="style.css">
-  
+
   <!-- Leaflet Maps CSS & JS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
   <!-- Favicon Branding -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,15 90,80 10,80' fill='none' stroke='%23c5a059' stroke-width='4'/%3E%3Cpolygon points='50,32 78,80 22,80' fill='%23c5a059' fill-opacity='0.2'/%3E%3Cline x1='50' y1='15' x2='50' y2='80' stroke='%23c5a059' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpolygon points='50,15 90,80 10,80' fill='none' stroke='%23c5a059' stroke-width='4'/%3E%3Cpolygon points='50,32 78,80 22,80' fill='%23c5a059' fill-opacity='0.2'/%3E%3Cline x1='50' y1='15' x2='50' y2='80' stroke='%23c5a059' stroke-width='5'/%3E%3C/svg%3E">
 </head>
+
 <body>
 
   <!-- ================= HEADER SECTION ================= -->
@@ -46,8 +54,10 @@
         <ul class="nav-list">
           <li class="nav-item has-dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="home-dropdown-trigger">
-              Home 
-              <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+              Home
+              <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5" />
+              </svg>
             </a>
             <ul class="dropdown-menu">
               <li><a href="#" class="dropdown-link" onclick="navigateTo('home-1', event)">Home 1</a></li>
@@ -61,19 +71,23 @@
             <a href="#" class="nav-link" onclick="navigateTo('services', event)">Services</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link" onclick="navigateTo('services', event)">Expertise</a>
+            <a href="#" class="nav-link" onclick="navigateTo('expertise', event)">Expertise</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link" onclick="navigateTo('contact', event)">Contact</a>
           </li>
           <li class="nav-item has-dropdown">
             <a href="#" class="nav-link dropdown-toggle" id="dashboard-dropdown-trigger">
-              Dashboard 
-              <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+              Dashboard
+              <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6">
+                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5" />
+              </svg>
             </a>
             <ul class="dropdown-menu">
-              <li><a href="#" class="dropdown-link" onclick="navigateTo('user-dashboard', event)">User Dashboard</a></li>
-              <li><a href="#" class="dropdown-link" onclick="navigateTo('admin-dashboard', event)">Admin Dashboard</a></li>
+              <li><a href="#" class="dropdown-link" onclick="navigateTo('user-dashboard', event)">User Dashboard</a>
+              </li>
+              <li><a href="#" class="dropdown-link" onclick="navigateTo('admin-dashboard', event)">Admin Dashboard</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -82,8 +96,10 @@
       <!-- Utility Actions (Theme, LTR/RTL, Login) -->
       <div class="utility-actions">
         <!-- Theme Toggle Button -->
-        <button id="theme-toggle-btn" class="utility-btn theme-toggle" title="Toggle Light/Dark Theme" aria-label="Toggle Light/Dark Theme">
-          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <button id="theme-toggle-btn" class="utility-btn theme-toggle" title="Toggle Light/Dark Theme"
+          aria-label="Toggle Light/Dark Theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
             <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -94,17 +110,20 @@
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
 
         <!-- LTR/RTL Toggle Button -->
-        <button id="direction-toggle-btn" class="utility-btn direction-toggle" title="Toggle LTR/RTL Layout" aria-label="Toggle LTR/RTL Layout">LTR</button>
+        <button id="direction-toggle-btn" class="utility-btn direction-toggle" title="Toggle LTR/RTL Layout"
+          aria-label="Toggle LTR/RTL Layout">LTR</button>
 
         <!-- Auth CTA -->
         <button class="login-btn" onclick="navigateTo('login', event)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="login-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="login-icon">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
@@ -129,14 +148,16 @@
         <li class="mobile-nav-item mobile-dropdown">
           <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
             <span>Home</span>
-            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5" />
+            </svg>
           </a>
           <ul class="mobile-dropdown-menu">
             <li><a href="#" class="mobile-dropdown-link" onclick="navigateTo('home-1', event)">Home 1</a></li>
             <li><a href="#" class="mobile-dropdown-link" onclick="navigateTo('home-2', event)">Home 2</a></li>
           </ul>
         </li>
-        
+
         <li class="mobile-nav-item">
           <a href="#" class="mobile-nav-link" onclick="navigateTo('about', event)">About</a>
         </li>
@@ -144,7 +165,7 @@
           <a href="#" class="mobile-nav-link" onclick="navigateTo('services', event)">Services</a>
         </li>
         <li class="mobile-nav-item">
-          <a href="#" class="mobile-nav-link" onclick="navigateTo('services', event)">Expertise</a>
+          <a href="#" class="mobile-nav-link" onclick="navigateTo('expertise', event)">Expertise</a>
         </li>
         <li class="mobile-nav-item">
           <a href="#" class="mobile-nav-link" onclick="navigateTo('contact', event)">Contact</a>
@@ -154,11 +175,15 @@
         <li class="mobile-nav-item mobile-dropdown">
           <a href="#" class="mobile-nav-link mobile-dropdown-toggle">
             <span>Dashboard</span>
-            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"/></svg>
+            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6">
+              <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5" />
+            </svg>
           </a>
           <ul class="mobile-dropdown-menu">
-            <li><a href="#" class="mobile-dropdown-link" onclick="navigateTo('user-dashboard', event)">User Dashboard</a></li>
-            <li><a href="#" class="mobile-dropdown-link" onclick="navigateTo('admin-dashboard', event)">Admin Dashboard</a></li>
+            <li><a href="#" class="mobile-dropdown-link" onclick="navigateTo('user-dashboard', event)">User
+                Dashboard</a></li>
+            <li><a href="#" class="mobile-dropdown-link" onclick="navigateTo('admin-dashboard', event)">Admin
+                Dashboard</a></li>
           </ul>
         </li>
       </ul>
@@ -166,8 +191,10 @@
       <!-- Theme & Layout & Login Controls inside Hamburger Menu -->
       <div class="mobile-nav-controls">
         <div class="mobile-toggles-row">
-          <button id="mobile-theme-toggle" class="utility-btn theme-toggle dash-theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <button id="mobile-theme-toggle" class="utility-btn theme-toggle dash-theme-toggle" title="Toggle Theme"
+            aria-label="Toggle Theme">
+            <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -178,18 +205,21 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
 
-          <button id="mobile-direction-toggle" class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction" aria-label="Toggle Layout Direction">
+          <button id="mobile-direction-toggle" class="utility-btn direction-toggle dash-direction-toggle"
+            title="Toggle Layout Direction" aria-label="Toggle Layout Direction">
             <span>LTR</span>
           </button>
         </div>
 
         <button class="login-btn mobile-login-btn" onclick="navigateTo('login', event)">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="login-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="login-icon">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
             <circle cx="12" cy="7" r="4"></circle>
           </svg>
@@ -209,13 +239,15 @@
     <!-- VIEW: HOME 1 (RETAINED SEARCH)                             -->
     <!-- ======================================================= -->
     <div id="view-home-1" class="app-view active-view">
-      
+
       <!-- Section 1: Hero Section (Retained C-Suite Search) -->
       <section class="hero-section h1-hero-bg" style="--hero-bg: url('f15.jpg');">
-        <div class="container hero-content text-center" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div class="container hero-content text-center"
+          style="display: flex; flex-direction: column; align-items: center; text-align: center;">
           <div class="hero-tagline">Discreet Executive Placements</div>
           <h1 class="hero-title font-serif">Sourcing Elite Leadership for Global Enterprise</h1>
-          <p class="hero-description">We serve as retained advisors to Fortune 500 boards, private equity general partners, and high-growth disruptors, aligning legendary visionaries to business-critical mandates.</p>
+          <p class="hero-description">We serve as retained advisors to Fortune 500 boards, private equity general
+            partners, and high-growth disruptors, aligning legendary visionaries to business-critical mandates.</p>
           <div class="hero-actions">
             <a href="#" class="btn btn-primary" onclick="navigateTo('contact', event)">Confidential Consultation</a>
             <a href="#" class="btn btn-secondary" onclick="navigateTo('services', event)">Explore Sectors</a>
@@ -231,12 +263,14 @@
             <div class="stat-card">
               <span class="stat-number font-serif" data-target="98">0%</span>
               <h3 class="stat-title">Retained Placement Success</h3>
-              <p class="stat-desc">An industry-leading success rate backed by our rigorous diagnostic vetting framework.</p>
+              <p class="stat-desc">An industry-leading success rate backed by our rigorous diagnostic vetting framework.
+              </p>
             </div>
             <div class="stat-card">
               <span class="stat-number font-serif" data-target="32">0</span>
               <h3 class="stat-title">Days Average to Shortlist</h3>
-              <p class="stat-desc">Accelerated talent pipeline mapping backed by state-of-the-art market intelligence.</p>
+              <p class="stat-desc">Accelerated talent pipeline mapping backed by state-of-the-art market intelligence.
+              </p>
             </div>
             <div class="stat-card">
               <span class="stat-number font-serif" data-target="150">0m+</span>
@@ -259,15 +293,20 @@
             <span class="section-subtitle">Core Expertise</span>
             <h2 class="section-title font-serif">Deep-Dive Industry Practice Sectors</h2>
             <div class="section-divider"></div>
-            <p class="section-desc" style="max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; color: var(--light-slate);">Sectors included: Financial Services, Technology & AI, Life Sciences & Health, Industrial & Energy</p>
+            <p class="section-desc"
+              style="max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; color: var(--light-slate);">Sectors
+              included: Financial Services, Technology & AI, Life Sciences & Health, Industrial & Energy</p>
           </div>
           <div class="sectors-grid">
             <div class="sector-card" style="--card-bg-img: url('f1.jpg');">
               <div class="sector-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
               </div>
               <h3 class="sector-name font-serif">Financial Services</h3>
-              <p class="sector-desc">Placing managing partners, CFOs, risk officers, and hedge fund leaders in global banking capitals.</p>
+              <p class="sector-desc">Placing managing partners, CFOs, risk officers, and hedge fund leaders in global
+                banking capitals.</p>
               <ul class="sector-placements">
                 <li>• CEO | Investment Banking</li>
                 <li>• Managing Director | Private Equity</li>
@@ -275,10 +314,15 @@
             </div>
             <div class="sector-card" style="--card-bg-img: url('f2.jpg');">
               <div class="sector-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
               </div>
               <h3 class="sector-name font-serif">Technology & AI</h3>
-              <p class="sector-desc">Sourcing VP of Eng, CTOs, and AI Research Directors for hyper-growth enterprises.</p>
+              <p class="sector-desc">Sourcing VP of Eng, CTOs, and AI Research Directors for hyper-growth enterprises.
+              </p>
               <ul class="sector-placements">
                 <li>• Chief AI Officer | Autotech</li>
                 <li>• VP of Engineering | Enterprise SaaS</li>
@@ -286,10 +330,14 @@
             </div>
             <div class="sector-card" style="--card-bg-img: url('f3.jpg');">
               <div class="sector-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path><path d="M12 6v6l4 2"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
               </div>
               <h3 class="sector-name font-serif">Life Sciences & Health</h3>
-              <p class="sector-desc">Identifying clinical research directors, CEOs, and regulatory heads for biotech pioneers.</p>
+              <p class="sector-desc">Identifying clinical research directors, CEOs, and regulatory heads for biotech
+                pioneers.</p>
               <ul class="sector-placements">
                 <li>• Chief Scientific Officer | Gene Therapeutics</li>
                 <li>• CEO | Clinical Research Org</li>
@@ -297,10 +345,13 @@
             </div>
             <div class="sector-card" style="--card-bg-img: url('f4.jpg');">
               <div class="sector-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
               </div>
               <h3 class="sector-name font-serif">Industrial & Energy</h3>
-              <p class="sector-desc">Placing Chief Operations Officers and supply chain visionaries in manufacturing conglomerates.</p>
+              <p class="sector-desc">Placing Chief Operations Officers and supply chain visionaries in manufacturing
+                conglomerates.</p>
               <ul class="sector-placements">
                 <li>• Chief Operations Officer | Renewable Energy</li>
                 <li>• VP Global Logistics | Auto Supply</li>
@@ -323,28 +374,32 @@
               <div class="step-num">01</div>
               <div class="step-content">
                 <h3 class="step-title font-serif">Strategic Calibration</h3>
-                <p>We work intimately with board boards to define the mandate, mapping structural goals, corporate values, and leadership culture dynamics.</p>
+                <p>We work intimately with board boards to define the mandate, mapping structural goals, corporate
+                  values, and leadership culture dynamics.</p>
               </div>
             </div>
             <div class="workflow-step">
               <div class="step-num">02</div>
               <div class="step-content">
                 <h3 class="step-title font-serif">Discreet Market Mapping</h3>
-                <p>Leveraging deep global channels, we map the entire active candidate landscape, focusing heavily on successful passive executives.</p>
+                <p>Leveraging deep global channels, we map the entire active candidate landscape, focusing heavily on
+                  successful passive executives.</p>
               </div>
             </div>
             <div class="workflow-step">
               <div class="step-num">03</div>
               <div class="step-content">
                 <h3 class="step-title font-serif">High-Fidelity Vetting</h3>
-                <p>Candidates undergo deep intellectual, operational, and psychometric screening to evaluate cultural synthesis and leadership capability.</p>
+                <p>Candidates undergo deep intellectual, operational, and psychometric screening to evaluate cultural
+                  synthesis and leadership capability.</p>
               </div>
             </div>
             <div class="workflow-step">
               <div class="step-num">04</div>
               <div class="step-content">
                 <h3 class="step-title font-serif">Discreet Dialogue & Close</h3>
-                <p>We handle all delicate compensation packaging negotiations, mitigating friction to ensure a seamless placement execution.</p>
+                <p>We handle all delicate compensation packaging negotiations, mitigating friction to ensure a seamless
+                  placement execution.</p>
               </div>
             </div>
           </div>
@@ -352,7 +407,8 @@
       </section>
 
       <!-- Section 5: Confidential Client Testimonials -->
-      <section class="testimonials-section section-padding bg-slate-950" style="background-image: radial-gradient(circle at 10% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 40%);">
+      <section class="testimonials-section section-padding bg-slate-950"
+        style="background-image: radial-gradient(circle at 10% 20%, rgba(197, 160, 89, 0.05) 0%, transparent 40%);">
         <div class="container">
           <div class="section-header text-center">
             <span class="section-subtitle">Discretion & Trust</span>
@@ -362,7 +418,9 @@
           <div class="testimonials-slider-wrapper">
             <div class="testimonial-card">
               <div class="quote-icon font-serif">“</div>
-              <p class="testimonial-text">"Vertex Search Group approached our CEO search with outstanding professionalism. Their industry access is unparalleled, but their absolute discretion was what cemented our trust. The placed CEO transformed our performance in 12 months."</p>
+              <p class="testimonial-text">"Vertex Search Group approached our CEO search with outstanding
+                professionalism. Their industry access is unparalleled, but their absolute discretion was what cemented
+                our trust. The placed CEO transformed our performance in 12 months."</p>
               <div class="testimonial-author">
                 <div class="author-title">Board Chairman</div>
                 <div class="author-company">Fortune 100 Financial Institution (Zurich)</div>
@@ -385,8 +443,10 @@
               <div class="insight-image-holder" style="background-image: url('f16.jpg');"></div>
               <div class="insight-body">
                 <span class="insight-category">Compensation Trends</span>
-                <h3 class="insight-headline font-serif"><a href="#">Equity Structuring in the Post-Inflation Era</a></h3>
-                <p class="insight-excerpt">How modern PE firms are restructuring management incentives to recruit elite executives amid rising interest rates.</p>
+                <h3 class="insight-headline font-serif"><a href="#">Equity Structuring in the Post-Inflation Era</a>
+                </h3>
+                <p class="insight-excerpt">How modern PE firms are restructuring management incentives to recruit elite
+                  executives amid rising interest rates.</p>
                 <div class="insight-meta">June 2026 • 8 Min Read</div>
               </div>
             </article>
@@ -395,7 +455,8 @@
               <div class="insight-body">
                 <span class="insight-category">Board Governance</span>
                 <h3 class="insight-headline font-serif"><a href="#">The Autonomous Board: AI Vetting in 2027</a></h3>
-                <p class="insight-excerpt">Sourcing tech literacy for modern boards of directors: Essential capabilities and technical skill competencies.</p>
+                <p class="insight-excerpt">Sourcing tech literacy for modern boards of directors: Essential capabilities
+                  and technical skill competencies.</p>
                 <div class="insight-meta">May 2026 • 11 Min Read</div>
               </div>
             </article>
@@ -404,7 +465,8 @@
               <div class="insight-body">
                 <span class="insight-category">Executive Retention</span>
                 <h3 class="insight-headline font-serif"><a href="#">Mitigating Burnout in C-Suite Placements</a></h3>
-                <p class="insight-excerpt">Best practices for structural onboarding, coaching integration, and active alignment during the critical first 180 days.</p>
+                <p class="insight-excerpt">Best practices for structural onboarding, coaching integration, and active
+                  alignment during the critical first 180 days.</p>
                 <div class="insight-meta">April 2026 • 6 Min Read</div>
               </div>
             </article>
@@ -418,14 +480,16 @@
     <!-- VIEW: HOME 2 (ADVISORY PRACTICE)                           -->
     <!-- ======================================================= -->
     <div id="view-home-2" class="app-view">
-      
+
       <!-- Section 1: Hero Section (Home 2 - Leadership Advisory Focus) -->
       <section class="hero-section h2-hero-bg" style="--hero-bg: url('f14.jpg');">
         <div class="container hero-content-split">
           <div class="hero-text-block">
             <div class="hero-tagline">Elite Boardroom Counsel</div>
             <h1 class="hero-title font-serif">Bespoke Talent Infrastructure & Governance</h1>
-            <p class="hero-description">Beyond recruitment, we architect the organizational skeletons of elite enterprises. Our consultants guide board succession, diverse leadership framework, and executive assessment dynamics.</p>
+            <p class="hero-description">Beyond recruitment, we architect the organizational skeletons of elite
+              enterprises. Our consultants guide board succession, diverse leadership framework, and executive
+              assessment dynamics.</p>
             <div class="hero-actions">
               <a href="#" class="btn btn-primary" onclick="navigateTo('services', event)">Advisory Practices</a>
               <a href="#" class="btn btn-secondary" onclick="navigateTo('contact', event)">Secure Briefing</a>
@@ -451,19 +515,22 @@
               <div class="advisor-avatar" style="background-image: url('male1.avif');"></div>
               <h3 class="advisor-name font-serif">Lord Charles Sterling</h3>
               <div class="advisor-title">Senior Partner | Financial Practice</div>
-              <p class="advisor-bio">Former CFO of HSBC Europe, Lord Sterling brings 30 years of corporate finance & banking leadership placing top-tier advisors.</p>
+              <p class="advisor-bio">Former CFO of HSBC Europe, Lord Sterling brings 30 years of corporate finance &
+                banking leadership placing top-tier advisors.</p>
             </div>
             <div class="advisor-card">
               <div class="advisor-avatar" style="background-image: url('f1.avif');"></div>
               <h3 class="advisor-name font-serif">Dr. Helen Vance</h3>
               <div class="advisor-title">Practice Lead | Biotech & Health</div>
-              <p class="advisor-bio">Expert in genomic therapeutics advisory and executive clinical talent management for Tier 1 life science funds.</p>
+              <p class="advisor-bio">Expert in genomic therapeutics advisory and executive clinical talent management
+                for Tier 1 life science funds.</p>
             </div>
             <div class="advisor-card">
               <div class="advisor-avatar" style="background-image: url('male2.avif');"></div>
               <h3 class="advisor-name font-serif">Marcus Chen, Esq.</h3>
               <div class="advisor-title">Managing Director | PE Practice</div>
-              <p class="advisor-bio">Specialist in strategic cross-border placements, mergers, and legal infrastructure for top-tier funds globally.</p>
+              <p class="advisor-bio">Specialist in strategic cross-border placements, mergers, and legal infrastructure
+                for top-tier funds globally.</p>
             </div>
           </div>
         </div>
@@ -482,30 +549,42 @@
               <div class="solution-header">
                 <span class="solution-num font-serif">I.</span>
                 <h3 class="solution-title font-serif">Board Composition & Diversity Blueprint</h3>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accordion-arrow"><path d="M6 9l6 6 6-6"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="accordion-arrow">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
               </div>
               <div class="solution-content">
-                <p>We analyze current board skills gaps, developing high-impact diversity policies and sourcing multi-dimensional directors who represent critical global perspectives.</p>
+                <p>We analyze current board skills gaps, developing high-impact diversity policies and sourcing
+                  multi-dimensional directors who represent critical global perspectives.</p>
               </div>
             </div>
             <div class="solution-item">
               <div class="solution-header">
                 <span class="solution-num font-serif">II.</span>
                 <h3 class="solution-title font-serif">CEO Succession & Contingency Planning</h3>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accordion-arrow"><path d="M6 9l6 6 6-6"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="accordion-arrow">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
               </div>
               <div class="solution-content">
-                <p>We build structured succession frameworks, identifying emergency and long-term internal candidates, and continuously benchmark them against top external talent.</p>
+                <p>We build structured succession frameworks, identifying emergency and long-term internal candidates,
+                  and continuously benchmark them against top external talent.</p>
               </div>
             </div>
             <div class="solution-item">
               <div class="solution-header">
                 <span class="solution-num font-serif">III.</span>
                 <h3 class="solution-title font-serif">Psychometric Competency Profiling</h3>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="accordion-arrow"><path d="M6 9l6 6 6-6"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="accordion-arrow">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
               </div>
               <div class="solution-content">
-                <p>Using advanced analytical psychometric profiling and behavioral diagnostics, we eliminate bias to isolate execution speed and stress tolerance in prospective hires.</p>
+                <p>Using advanced analytical psychometric profiling and behavioral diagnostics, we eliminate bias to
+                  isolate execution speed and stress tolerance in prospective hires.</p>
               </div>
             </div>
           </div>
@@ -552,19 +631,22 @@
             <div class="case-card">
               <span class="case-number font-serif">01</span>
               <h3 class="case-title font-serif">C-Suite Turnaround Case</h3>
-              <p class="case-body">Placed a CEO and restructure team for an $18B German industrial conglomerate in under 45 days, prompting a 24% operational efficiency bounce.</p>
+              <p class="case-body">Placed a CEO and restructure team for an $18B German industrial conglomerate in under
+                45 days, prompting a 24% operational efficiency bounce.</p>
               <a href="#" class="case-link">Request De-identified Case PDF →</a>
             </div>
             <div class="case-card">
               <span class="case-number font-serif">02</span>
               <h3 class="case-title font-serif">Multinational Governance Transition</h3>
-              <p class="case-body">Orchestrated a 3-year CEO succession plan for a family-controlled global food manufacturer, maintaining board stability throughout transition.</p>
+              <p class="case-body">Orchestrated a 3-year CEO succession plan for a family-controlled global food
+                manufacturer, maintaining board stability throughout transition.</p>
               <a href="#" class="case-link">Request De-identified Case PDF →</a>
             </div>
             <div class="case-card">
               <span class="case-number font-serif">03</span>
               <h3 class="case-title font-serif">Cross-Border Fintech Synthesis</h3>
-              <p class="case-body">Mapped and executed the hiring of 14 VP engineering talents across 5 countries for a premier private equity portfolio buyout firm.</p>
+              <p class="case-body">Mapped and executed the hiring of 14 VP engineering talents across 5 countries for a
+                premier private equity portfolio buyout firm.</p>
               <a href="#" class="case-link">Request De-identified Case PDF →</a>
             </div>
           </div>
@@ -578,7 +660,8 @@
             <div class="cta-left">
               <span class="section-subtitle">Discreet Engagement</span>
               <h2 class="cta-heading font-serif">Partner with Global Authority</h2>
-              <p class="cta-subtext">Establish a retained search mandate or request a confidential governance assessment. All communications are protected under Swiss data regulations.</p>
+              <p class="cta-subtext">Establish a retained search mandate or request a confidential governance
+                assessment. All communications are protected under Swiss data regulations.</p>
               <div class="cta-action-group">
                 <a href="#" class="btn btn-primary" onclick="navigateTo('contact', event)">Initiate Retained Mandate</a>
                 <a href="#" class="btn btn-secondary" onclick="navigateTo('contact', event)">Secure PGP Keys</a>
@@ -611,13 +694,14 @@
     <!-- VIEW: ABOUT                                                -->
     <!-- ======================================================= -->
     <div id="view-about" class="app-view">
-      
+
       <!-- Section 1: About Hero -->
       <section class="hero-section about-hero" style="--hero-bg: url('f13.jpg');">
         <div class="container hero-content">
           <div class="hero-tagline">Our Legacy & Pillars</div>
           <h1 class="hero-title font-serif">Architects of High-Value Enterprise</h1>
-          <p class="hero-description">Founded with a singular mission—to inject transformative talent where capital meets critical execution. We operate at the apex of discretion, mapping outstanding executives globally.</p>
+          <p class="hero-description">Founded with a singular mission—to inject transformative talent where capital
+            meets critical execution. We operate at the apex of discretion, mapping outstanding executives globally.</p>
         </div>
       </section>
 
@@ -637,7 +721,8 @@
               </div>
               <div class="pillar-right">
                 <h3 class="pillar-title font-serif">Absolute Discretion</h3>
-                <p class="pillar-desc">We operate strictly off-market, protecting client identity and candidate search privacy via secure Swiss encrypted pipelines.</p>
+                <p class="pillar-desc">We operate strictly off-market, protecting client identity and candidate search
+                  privacy via secure Swiss encrypted pipelines.</p>
               </div>
             </div>
             <div class="premium-pillar-item">
@@ -647,7 +732,8 @@
               </div>
               <div class="pillar-right">
                 <h3 class="pillar-title font-serif">Diagnostic Depth</h3>
-                <p class="pillar-desc">Our assessments go beyond traditional resumes. We map psychological longevity, stress capabilities, and precise cultural alignment indexes.</p>
+                <p class="pillar-desc">Our assessments go beyond traditional resumes. We map psychological longevity,
+                  stress capabilities, and precise cultural alignment indexes.</p>
               </div>
             </div>
             <div class="premium-pillar-item">
@@ -657,7 +743,8 @@
               </div>
               <div class="pillar-right">
                 <h3 class="pillar-title font-serif">Sovereign Fluidity</h3>
-                <p class="pillar-desc">Utilizing our network across Zurich, London, and New York nodes, we facilitate cross-border placement with legal and geographic agility.</p>
+                <p class="pillar-desc">Utilizing our network across Zurich, London, and New York nodes, we facilitate
+                  cross-border placement with legal and geographic agility.</p>
               </div>
             </div>
           </div>
@@ -678,7 +765,8 @@
               <div class="team-info">
                 <h4 class="team-name font-serif">Victoria Sterling</h4>
                 <div class="team-role">Partner | Board Advisory</div>
-                <p class="team-bio">Formulates strategic board structures, focusing on diversity frameworks for Nasdaq-listed technology giants.</p>
+                <p class="team-bio">Formulates strategic board structures, focusing on diversity frameworks for
+                  Nasdaq-listed technology giants.</p>
               </div>
             </div>
             <div class="team-card">
@@ -686,7 +774,8 @@
               <div class="team-info">
                 <h4 class="team-name font-serif">Jonathan Brooks</h4>
                 <div class="team-role">Lead Consultant | FinTech Practice</div>
-                <p class="team-bio">Orchestrated executive placements across 40+ VC-backed decacorn fintech initiatives worldwide.</p>
+                <p class="team-bio">Orchestrated executive placements across 40+ VC-backed decacorn fintech initiatives
+                  worldwide.</p>
               </div>
             </div>
             <div class="team-card">
@@ -694,7 +783,8 @@
               <div class="team-info">
                 <h4 class="team-name font-serif">Amir Al-Sayed</h4>
                 <div class="team-role">Partner | MENA Region Placements</div>
-                <p class="team-bio">Advises sovereign wealth funds in the GCC on C-level recruitment, infrastructure leadership, and digital transformation.</p>
+                <p class="team-bio">Advises sovereign wealth funds in the GCC on C-level recruitment, infrastructure
+                  leadership, and digital transformation.</p>
               </div>
             </div>
           </div>
@@ -707,7 +797,9 @@
           <div class="dei-text">
             <span class="section-subtitle">Leadership Diversity</span>
             <h2 class="font-serif">Architecting Inclusive Boardrooms</h2>
-            <p>Our commitment to diversity is operational, not cosmetic. We actively track talent metrics to ensure that every executive slate we present features multi-dimensional backgrounds, fostering varied strategic dialogue in board meetings.</p>
+            <p>Our commitment to diversity is operational, not cosmetic. We actively track talent metrics to ensure that
+              every executive slate we present features multi-dimensional backgrounds, fostering varied strategic
+              dialogue in board meetings.</p>
             <div class="dei-stats">
               <div class="dei-stat-item">
                 <div class="dei-stat-num font-serif">43%</div>
@@ -735,22 +827,26 @@
             <div class="timeline-node">
               <div class="node-year font-serif">1998</div>
               <h4 class="node-title">Founding</h4>
-              <p class="node-desc">Vertex Search Group is established in London, focusing on investment banking placements.</p>
+              <p class="node-desc">Vertex Search Group is established in London, focusing on investment banking
+                placements.</p>
             </div>
             <div class="timeline-node">
               <div class="node-year font-serif">2006</div>
               <h4 class="node-title">Sovereign Growth</h4>
-              <p class="node-desc">Expanded presence with Switzerland offices, taking on global sovereign mandate clients.</p>
+              <p class="node-desc">Expanded presence with Switzerland offices, taking on global sovereign mandate
+                clients.</p>
             </div>
             <div class="timeline-node">
               <div class="node-year font-serif">2015</div>
               <h4 class="node-title">Tech Vanguard</h4>
-              <p class="node-desc">Established our Technology and Silicon Valley advisory, mapping the growing SaaS movement.</p>
+              <p class="node-desc">Established our Technology and Silicon Valley advisory, mapping the growing SaaS
+                movement.</p>
             </div>
             <div class="timeline-node">
               <div class="node-year font-serif">2026</div>
               <h4 class="node-title">Digital & AI Vanguard</h4>
-              <p class="node-desc">Implementing AI candidate intelligence, combining secure matching with absolute human vetting.</p>
+              <p class="node-desc">Implementing AI candidate intelligence, combining secure matching with absolute human
+                vetting.</p>
             </div>
           </div>
         </div>
@@ -789,7 +885,8 @@
               <div class="partner-icon-wrapper">
                 <svg width="36" height="36" viewBox="0 0 100 100" class="partner-svg">
                   <circle cx="50" cy="50" r="45" fill="none" stroke="var(--gold-color)" stroke-width="1.5" />
-                  <rect x="30" y="30" width="40" height="40" fill="none" stroke="var(--gold-color)" stroke-width="1.5" />
+                  <rect x="30" y="30" width="40" height="40" fill="none" stroke="var(--gold-color)"
+                    stroke-width="1.5" />
                 </svg>
               </div>
               <h4 class="partner-name font-serif">PE Analytics Group</h4>
@@ -812,16 +909,132 @@
     </div>
 
     <!-- ======================================================= -->
+    <!-- VIEW: EXPERTISE                                            -->
+    <!-- ======================================================= -->
+    <div id="view-expertise" class="app-view">
+      <!-- Section 1: Expertise Hero -->
+      <section class="hero-section expertise-hero" style="--hero-bg: url('f15.jpg');">
+        <div class="container hero-content">
+          <div class="hero-tagline">Specialized Domains</div>
+          <h1 class="hero-title font-serif">Unrivaled Market Mastery</h1>
+          <p class="hero-description">Navigating complex global markets with pinpoint accuracy. Our dedicated practice areas deliver exceptional leadership to niche sectors.</p>
+        </div>
+      </section>
+
+      <!-- Section 2: Industry Practice Sectors -->
+      <section class="sectors-section section-padding bg-slate-950">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-subtitle">Dedicated Practice Areas</span>
+            <h2 class="section-title font-serif">Emerging & Established Markets</h2>
+            <div class="section-divider"></div>
+            <p class="section-desc"
+              style="max-width: 600px; margin: 1rem auto 0; font-size: 1.1rem; color: var(--light-slate);">Pioneering executive search across fast-evolving domains: Consumer Brands, Sovereign Wealth, Cyber Security, and Sustainable Impact.</p>
+          </div>
+          <div class="sectors-grid">
+            <div class="sector-card" style="--card-bg-img: url('f5.jpg');">
+              <div class="sector-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 class="sector-name font-serif">Consumer & Retail Brands</h3>
+              <p class="sector-desc">Identifying transformative leaders for global luxury, FMCG, and omnichannel retail innovators.</p>
+              <ul class="sector-placements">
+                <li>• Chief Marketing Officer | Luxury Goods</li>
+                <li>• President | E-Commerce Group</li>
+              </ul>
+            </div>
+            <div class="sector-card" style="--card-bg-img: url('f6.jpg');">
+              <div class="sector-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <h3 class="sector-name font-serif">Sovereign Wealth & Private Equity</h3>
+              <p class="sector-desc">Placing board members and operating partners within the world's most exclusive investment funds.</p>
+              <ul class="sector-placements">
+                <li>• Operating Partner | Private Equity</li>
+                <li>• Chief Investment Officer | Wealth Fund</li>
+              </ul>
+            </div>
+            <div class="sector-card" style="--card-bg-img: url('f7.jpg');">
+              <div class="sector-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              </div>
+              <h3 class="sector-name font-serif">Cyber & National Security</h3>
+              <p class="sector-desc">Sourcing elite defensive architects, CISOs, and intelligence directors for critical infrastructure defense.</p>
+              <ul class="sector-placements">
+                <li>• Chief Information Security Officer | Defense</li>
+                <li>• VP Threat Intelligence | Cyber Firm</li>
+              </ul>
+            </div>
+            <div class="sector-card" style="--card-bg-img: url('f8.jpg');">
+              <div class="sector-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z" />
+                </svg>
+              </div>
+              <h3 class="sector-name font-serif">ESG & Sustainable Impact</h3>
+              <p class="sector-desc">Aligning visionary executives with mission-driven organizations focused on global sustainability.</p>
+              <ul class="sector-placements">
+                <li>• Chief Sustainability Officer | Conglomerate</li>
+                <li>• Head of ESG Strategy | Global Bank</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Industry Intelligence -->
+      <section class="service-detail-section section-padding bg-slate-900">
+        <div class="container service-detail-row">
+          <div class="service-media" style="background-image: url('f9.jpg');"></div>
+          <div class="service-text">
+            <span class="service-num font-serif">01</span>
+            <h2 class="font-serif">Proprietary Market Intelligence</h2>
+            <p>Our sector experts continuously map the global talent pool, identifying not just who is available, but who is quietly driving transformational change within competitors.</p>
+            <ul class="service-features">
+              <li>• Deep-market talent mapping</li>
+              <li>• Competitor organizational analysis</li>
+              <li>• Predictive leadership trends</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Sector-Specific Advisory -->
+      <section class="service-detail-section section-padding bg-slate-950">
+        <div class="container service-detail-row reverse-row">
+          <div class="service-media" style="background-image: url('f10.jpg');"></div>
+          <div class="service-text">
+            <span class="service-num font-serif">02</span>
+            <h2 class="font-serif">Sector-Specific Advisory</h2>
+            <p>We go beyond traditional recruitment by providing board-level insights into industry-specific compensation benchmarks, succession planning, and structural agility.</p>
+            <ul class="service-features">
+              <li>• Executive compensation structuring</li>
+              <li>• Strategic succession planning</li>
+              <li>• Pre-M&A leadership audits</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================================================= -->
     <!-- VIEW: SERVICES                                             -->
     <!-- ======================================================= -->
     <div id="view-services" class="app-view">
-      
+
       <!-- Section 1: Services Hero -->
       <section class="hero-section services-hero" style="--hero-bg: url('f12.jpg');">
         <div class="container hero-content">
           <div class="hero-tagline">Our Expertise</div>
           <h1 class="hero-title font-serif">Bespoke Governance & Recruiting Services</h1>
-          <p class="hero-description">We architect custom human capital solutions, ensuring boards, executive teams, and high-value portfolios align perfectly with target objectives.</p>
+          <p class="hero-description">We architect custom human capital solutions, ensuring boards, executive teams, and
+            high-value portfolios align perfectly with target objectives.</p>
         </div>
       </section>
 
@@ -832,7 +1045,9 @@
           <div class="service-text">
             <span class="service-num font-serif">01</span>
             <h2 class="font-serif">Retained Executive Search</h2>
-            <p>Our core discipline. We coordinate complete, global market mapping and deep qualitative assessments to fill CEO, CFO, COO, and VP positions. By limiting active search engagements per partner, we guarantee high-focus alignment and swift closing speeds.</p>
+            <p>Our core discipline. We coordinate complete, global market mapping and deep qualitative assessments to
+              fill CEO, CFO, COO, and VP positions. By limiting active search engagements per partner, we guarantee
+              high-focus alignment and swift closing speeds.</p>
             <ul class="service-features">
               <li>• Absolute off-market candidate mapping</li>
               <li>• In-depth cultural chemistry evaluations</li>
@@ -849,7 +1064,9 @@
           <div class="service-text">
             <span class="service-num font-serif">02</span>
             <h2 class="font-serif">Board Advisory & Governance</h2>
-            <p>We work with CEOs and family office patriarchs to build resilient board compositions. We assess existing skill matrices, handle independent director recruitment, and structure governance framework blueprints that mitigate risk.</p>
+            <p>We work with CEOs and family office patriarchs to build resilient board compositions. We assess existing
+              skill matrices, handle independent director recruitment, and structure governance framework blueprints
+              that mitigate risk.</p>
             <ul class="service-features">
               <li>• Board skill diagnostic auditing</li>
               <li>• Independent director recruiting & onboarding</li>
@@ -866,7 +1083,9 @@
           <div class="service-text">
             <span class="service-num font-serif">03</span>
             <h2 class="font-serif">Leadership Assessments & Diagnostics</h2>
-            <p>We leverage advanced clinical and operational diagnostic tests to evaluate leadership candidates. Our tools isolate strategic decision speed, stress capacity under crisis, and alignment with modern digital processes.</p>
+            <p>We leverage advanced clinical and operational diagnostic tests to evaluate leadership candidates. Our
+              tools isolate strategic decision speed, stress capacity under crisis, and alignment with modern digital
+              processes.</p>
             <ul class="service-features">
               <li>• Cognitive & decision-speed profiling</li>
               <li>• Stress and resilience testing under simulated crises</li>
@@ -883,7 +1102,8 @@
           <div class="service-text">
             <span class="service-num font-serif">04</span>
             <h2 class="font-serif">Interim Management Placements</h2>
-            <p>Sourcing elite executive leadership in high-pressure turnarounds or critical vacancies within 72 hours. We maintain a pre-vetted network of operational executives ready for immediate deployment.</p>
+            <p>Sourcing elite executive leadership in high-pressure turnarounds or critical vacancies within 72 hours.
+              We maintain a pre-vetted network of operational executives ready for immediate deployment.</p>
             <ul class="service-features">
               <li>• Sourcing interim C-Suite professionals within 3 days</li>
               <li>• Post-merger integration and restructuring specialists</li>
@@ -900,7 +1120,8 @@
           <div class="service-text">
             <span class="service-num font-serif">05</span>
             <h2 class="font-serif">Market Intelligence & Talent Mapping</h2>
-            <p>We provide enterprise clients with custom industry research, compensation benchmarking, and talent density maps prior to launching acquisitions or expansions.</p>
+            <p>We provide enterprise clients with custom industry research, compensation benchmarking, and talent
+              density maps prior to launching acquisitions or expansions.</p>
             <ul class="service-features">
               <li>• Real-time compensation and incentive structuring reports</li>
               <li>• Competitor organizational charts & talent flow maps</li>
@@ -916,13 +1137,14 @@
     <!-- VIEW: CONTACT                                              -->
     <!-- ======================================================= -->
     <div id="view-contact" class="app-view">
-      
+
       <!-- Section 1: Contact Hero -->
       <section class="hero-section contact-hero" style="--hero-bg: url('f10.jpg');">
         <div class="container hero-content">
           <div class="hero-tagline">Secure Communication Channels</div>
           <h1 class="hero-title font-serif">Initiate a Confidential Strategic Inquiry</h1>
-          <p class="hero-description">Whether you are a board chair initiating a retained search mandate or an executive candidate submitting credentials, your data is handled with absolute cryptographic safety.</p>
+          <p class="hero-description">Whether you are a board chair initiating a retained search mandate or an executive
+            candidate submitting credentials, your data is handled with absolute cryptographic safety.</p>
         </div>
       </section>
 
@@ -932,15 +1154,24 @@
           <div class="form-instructions">
             <span class="section-subtitle">Secure Mandate Form</span>
             <h2 class="font-serif">Client Intake Portal</h2>
-            <p>All form submissions are routed through our private server, encrypted at rest, and accessed only by designated practice leaders. If you prefer to sign an NDA before detailing the search, check the box below.</p>
-            
+            <p>All form submissions are routed through our private server, encrypted at rest, and accessed only by
+              designated practice leaders. If you prefer to sign an NDA before detailing the search, check the box
+              below.</p>
+
             <div class="security-badges">
               <div class="badge-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="badge-icon">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
                 <span>SSL/AES-256 Encryption Active</span>
               </div>
               <div class="badge-item">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  class="badge-icon">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
                 <span>GDPR & CCPA Compliant Pipeline</span>
               </div>
             </div>
@@ -976,7 +1207,8 @@
               </div>
               <div class="form-group">
                 <label for="client-details">Confidential Mandate Details</label>
-                <textarea id="client-details" rows="5" required placeholder="Provide brief operational outlines of the mandate..."></textarea>
+                <textarea id="client-details" rows="5" required
+                  placeholder="Provide brief operational outlines of the mandate..."></textarea>
               </div>
               <div class="form-checkbox-group">
                 <input type="checkbox" id="client-nda-request">
@@ -986,7 +1218,8 @@
             </form>
             <div id="client-form-success" class="form-success-alert hidden">
               <h4>Submission Encrypted Successfully</h4>
-              <p>Your strategic mandate reference ID is <strong>#VTX-9882-X</strong>. A practice director will contact you via secure voice protocols.</p>
+              <p>Your strategic mandate reference ID is <strong>#VTX-9882-X</strong>. A practice director will contact
+                you via secure voice protocols.</p>
             </div>
           </div>
         </div>
@@ -998,7 +1231,9 @@
           <div class="form-instructions">
             <span class="section-subtitle">Executive Registry</span>
             <h2 class="font-serif">Candidate Portal Registry</h2>
-            <p>We welcome submissions from established executives ($250k+ base compensation) looking for discrete, off-market advisory options. By selecting <strong>Anonymize Profile</strong>, we will hide your name and current employer, showing only your high-level competencies until you grant specific approval.</p>
+            <p>We welcome submissions from established executives ($250k+ base compensation) looking for discrete,
+              off-market advisory options. By selecting <strong>Anonymize Profile</strong>, we will hide your name and
+              current employer, showing only your high-level competencies until you grant specific approval.</p>
           </div>
 
           <div class="form-wrapper">
@@ -1015,21 +1250,25 @@
               </div>
               <div class="form-group">
                 <label for="candidate-bio">Current Title & Profile Summary</label>
-                <input type="text" id="candidate-bio" required placeholder="e.g. Managing Partner at Global Tech Equity Fund">
+                <input type="text" id="candidate-bio" required
+                  placeholder="e.g. Managing Partner at Global Tech Equity Fund">
               </div>
               <div class="form-group">
                 <label for="candidate-resume">Confidential Resume / CV Upload (Plain Text or PDF)</label>
-                <textarea id="candidate-resume" rows="6" required placeholder="Paste plain text credentials or drag and drop details here..."></textarea>
+                <textarea id="candidate-resume" rows="6" required
+                  placeholder="Paste plain text credentials or drag and drop details here..."></textarea>
               </div>
               <div class="form-checkbox-group">
                 <input type="checkbox" id="candidate-anonymize">
-                <label for="candidate-anonymize"><strong>Anonymize Profile:</strong> Hide candidate identity and current company name from initial recruiter searches.</label>
+                <label for="candidate-anonymize"><strong>Anonymize Profile:</strong> Hide candidate identity and current
+                  company name from initial recruiter searches.</label>
               </div>
               <button type="submit" class="btn btn-secondary btn-block">Submit Credentials</button>
             </form>
             <div id="candidate-form-success" class="form-success-alert hidden">
               <h4>Executive Credentials Vaulted</h4>
-              <p>Your candidate profile has been cryptographically vaulted. Status: <strong>Anonymized & Vetted</strong>.</p>
+              <p>Your candidate profile has been cryptographically vaulted. Status: <strong>Anonymized &
+                  Vetted</strong>.</p>
             </div>
           </div>
         </div>
@@ -1077,31 +1316,52 @@
           <div class="privacy-protocols-grid">
             <div class="protocol-card">
               <div class="protocol-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)"
+                  stroke-width="1.5">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
               </div>
               <h3 class="protocol-title font-serif">AES-256 Cryptographic Vaulting</h3>
-              <p class="protocol-desc">Every candidate dossier and client mandate specification is encrypted at rest and in transit via military-grade standards.</p>
+              <p class="protocol-desc">Every candidate dossier and client mandate specification is encrypted at rest and
+                in transit via military-grade standards.</p>
             </div>
             <div class="protocol-card">
               <div class="protocol-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)"
+                  stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
               </div>
               <h3 class="protocol-title font-serif">GDPR Sovereign Compliance</h3>
-              <p class="protocol-desc">We respect individual data sovereignty. Candidates maintain complete control over credential visibility and erasure.</p>
+              <p class="protocol-desc">We respect individual data sovereignty. Candidates maintain complete control over
+                credential visibility and erasure.</p>
             </div>
             <div class="protocol-card">
               <div class="protocol-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)"
+                  stroke-width="1.5">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
               </div>
               <h3 class="protocol-title font-serif">SOC2 & ISO 27001 Vetted</h3>
-              <p class="protocol-desc">Our operational pipelines undergo continuous third-party audits to guarantee absolute security standards.</p>
+              <p class="protocol-desc">Our operational pipelines undergo continuous third-party audits to guarantee
+                absolute security standards.</p>
             </div>
             <div class="protocol-card">
               <div class="protocol-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--gold-color)"
+                  stroke-width="1.5">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                  </path>
+                  <path d="M2 12h20"></path>
+                </svg>
               </div>
               <h3 class="protocol-title font-serif">Swiss Data Residency</h3>
-              <p class="protocol-desc">Hosted entirely on physical server arrays in Swiss alpine bunkers, immune to foreign warrant access.</p>
+              <p class="protocol-desc">Hosted entirely on physical server arrays in Swiss alpine bunkers, immune to
+                foreign warrant access.</p>
             </div>
           </div>
         </div>
@@ -1119,28 +1379,39 @@
             <div class="faq-item">
               <div class="faq-question">
                 <h3 class="font-serif">How does candidate anonymization work?</h3>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
               </div>
               <div class="faq-answer">
-                <p>When you anonymize your profile, our internal system replaces your name, employer name, and specific education metadata with generic descriptions (e.g. "CFO at Swiss Biotech"). Employers can view your skills but must submit a request to reveal your identity, which you must manually approve.</p>
+                <p>When you anonymize your profile, our internal system replaces your name, employer name, and specific
+                  education metadata with generic descriptions (e.g. "CFO at Swiss Biotech"). Employers can view your
+                  skills but must submit a request to reveal your identity, which you must manually approve.</p>
               </div>
             </div>
             <div class="faq-item">
               <div class="faq-question">
                 <h3 class="font-serif">What are your placement fees?</h3>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
               </div>
               <div class="faq-answer">
-                <p>We work strictly on a retained basis. We charge a set advisory fee calculated as a percentage of the placement's first-year target compensation. This fee is paid in milestones throughout the execution blueprint, guaranteeing our full loyalty to the mandate.</p>
+                <p>We work strictly on a retained basis. We charge a set advisory fee calculated as a percentage of the
+                  placement's first-year target compensation. This fee is paid in milestones throughout the execution
+                  blueprint, guaranteeing our full loyalty to the mandate.</p>
               </div>
             </div>
             <div class="faq-item">
               <div class="faq-question">
                 <h3 class="font-serif">Do you manage interim placements?</h3>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 9l-7 7-7-7"/></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 9l-7 7-7-7" />
+                </svg>
               </div>
               <div class="faq-answer">
-                <p>Yes. We have a pre-screened directory of operational executives who can step into C-Suite vacancies, post-merger integration, or turnaround events within 72 hours.</p>
+                <p>Yes. We have a pre-screened directory of operational executives who can step into C-Suite vacancies,
+                  post-merger integration, or turnaround events within 72 hours.</p>
               </div>
             </div>
           </div>
@@ -1154,12 +1425,12 @@
     <!-- VIEW: USER DASHBOARD (CANDIDATE PORTAL)                   -->
     <!-- ======================================================= -->
     <div id="view-user-dashboard" class="app-view dashboard-layout-view">
-      
+
       <!-- Split Dashboard Shell -->
       <div class="dashboard-shell-container">
         <!-- Sidebar Overlay for Mobile -->
         <div class="dashboard-sidebar-overlay" onclick="toggleDashboardSidebar()"></div>
-        
+
         <!-- Sidebar Panel (Fixed, not scrollable) -->
         <aside class="dashboard-sidebar">
           <div class="sidebar-top">
@@ -1184,11 +1455,11 @@
             </a>
             <!-- Candidate Fast Info -->
             <div class="sidebar-candidate-info">
-              <div class="candidate-avatar-stub" style="background-image: url('f11.jpg');"></div>
-              <div class="candidate-details">
+              <div class="candidate-details" style="flex-grow: 1;">
                 <h4 class="candidate-name font-serif">Richard Sterling</h4>
                 <p class="candidate-sub">CFO | Biotech & Health</p>
               </div>
+              <div class="candidate-avatar-stub" style="background-image: url('f11.jpg');"></div>
             </div>
           </div>
 
@@ -1197,19 +1468,32 @@
             <ul class="sidebar-nav-list">
               <li>
                 <a href="#" class="sidebar-nav-link active-nav" onclick="switchDashboardTab('user-overview', event)">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="9"></rect>
+                    <rect x="14" y="3" width="7" height="5"></rect>
+                    <rect x="14" y="12" width="7" height="9"></rect>
+                    <rect x="3" y="16" width="7" height="5"></rect>
+                  </svg>
                   <span>Overview</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="sidebar-nav-link" onclick="switchDashboardTab('user-resume-vault', event)">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
                   <span>Resume Vault</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="sidebar-nav-link" onclick="switchDashboardTab('user-interviews', event)">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
                   <span>Interviews</span>
                   <span class="nav-badge">2</span>
                 </a>
@@ -1219,7 +1503,11 @@
 
           <div class="sidebar-bottom">
             <a href="#" class="sidebar-nav-link exit-link" onclick="navigateTo('home-1', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
               <span>Back to Site</span>
             </a>
           </div>
@@ -1227,7 +1515,7 @@
 
         <!-- Content Area (Scrollable) -->
         <main class="dashboard-content-area">
-          
+
           <!-- Top Bar inside Dashboard -->
           <div class="dashboard-topbar">
             <div class="dashboard-topbar-left">
@@ -1238,11 +1526,12 @@
               </button>
               <h2 class="dash-title font-serif">Executive Candidate Workspace</h2>
             </div>
-            
+
             <div class="topbar-controls">
               <!-- Inline Dark/Light Toggle -->
               <button class="utility-btn theme-toggle dash-theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
                   <circle cx="12" cy="12" r="5"></circle>
                   <line x1="12" y1="1" x2="12" y2="3"></line>
                   <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -1253,13 +1542,15 @@
                   <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                   <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                 </svg>
-                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
                   <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
               </button>
 
               <!-- Inline LTR/RTL Toggle -->
-              <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction" aria-label="Toggle Layout Direction">
+              <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction"
+                aria-label="Toggle Layout Direction">
                 <span>LTR</span>
               </button>
             </div>
@@ -1282,7 +1573,11 @@
               <div class="metric-card">
                 <div class="metric-head">
                   <span class="metric-lbl">Profile Views (PE Partners)</span>
-                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
                 </div>
                 <div class="metric-value font-serif">142</div>
                 <div class="metric-trend positive">+18% this month</div>
@@ -1290,7 +1585,10 @@
               <div class="metric-card">
                 <div class="metric-head">
                   <span class="metric-lbl">Discreet Mandate Matches</span>
-                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon></svg>
+                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  </svg>
                 </div>
                 <div class="metric-value font-serif">8</div>
                 <div class="metric-trend neutral">2 pending response</div>
@@ -1298,7 +1596,11 @@
               <div class="metric-card">
                 <div class="metric-head">
                   <span class="metric-lbl">Unmasking Requests Approved</span>
-                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
                 </div>
                 <div class="metric-value font-serif">3</div>
                 <div class="metric-trend positive">+1 from last week</div>
@@ -1318,7 +1620,8 @@
                     <line x1="40" y1="120" x2="380" y2="120" stroke="rgba(128,128,128,0.15)" />
                     <line x1="40" y1="170" x2="380" y2="170" stroke="rgba(128,128,128,0.25)" />
                     <!-- Chart Line -->
-                    <path d="M 40 150 L 100 130 L 160 90 L 220 120 L 280 60 L 340 40" fill="none" stroke="var(--gold-color)" stroke-width="3" />
+                    <path d="M 40 150 L 100 130 L 160 90 L 220 120 L 280 60 L 340 40" fill="none"
+                      stroke="var(--gold-color)" stroke-width="3" />
                     <!-- Chart Data Dots -->
                     <circle cx="40" cy="150" r="4" fill="var(--gold-color)" />
                     <circle cx="100" cy="130" r="4" fill="var(--gold-color)" />
@@ -1336,18 +1639,21 @@
                   </svg>
                 </div>
               </div>
-              
+
               <!-- Chart 2: Practice Matches Pie Chart -->
               <div class="chart-container-card">
                 <h3 class="chart-title font-serif">Practice Sector Match Distribution</h3>
                 <div class="chart-wrapper flex-center">
                   <svg viewBox="0 0 200 200" class="svg-pie-chart" width="150" height="150">
                     <!-- Tech & AI Segment (60%) -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="var(--gold-color)" stroke-width="25" stroke-dasharray="301 502" stroke-dashoffset="0" />
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="var(--gold-color)" stroke-width="25"
+                      stroke-dasharray="301 502" stroke-dashoffset="0" />
                     <!-- Health Segment (30%) -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(197, 160, 89, 0.5)" stroke-width="25" stroke-dasharray="150 502" stroke-dashoffset="-301" />
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(197, 160, 89, 0.5)" stroke-width="25"
+                      stroke-dasharray="150 502" stroke-dashoffset="-301" />
                     <!-- Financial Segment (10%) -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(128, 128, 128, 0.25)" stroke-width="25" stroke-dasharray="51 502" stroke-dashoffset="-451" />
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(128, 128, 128, 0.25)" stroke-width="25"
+                      stroke-dasharray="51 502" stroke-dashoffset="-451" />
                   </svg>
                   <div class="pie-legends">
                     <div class="legend-item"><span class="leg-color gold-bg"></span><span>Tech (60%)</span></div>
@@ -1389,7 +1695,8 @@
           <!-- TAB CONTENT: RESUME VAULT -->
           <div id="tab-user-resume-vault" class="dashboard-tab-content">
             <h3 class="tab-sec-title font-serif">Confidential Credentials Encryption</h3>
-            <p class="tab-sec-desc">Tweak which structural parameters of your profile are displayed in global recruiters searches.</p>
+            <p class="tab-sec-desc">Tweak which structural parameters of your profile are displayed in global recruiters
+              searches.</p>
 
             <div class="resume-anonymizer-box">
               <div class="anonymizer-controls">
@@ -1435,8 +1742,10 @@
                   </div>
                   <div class="preview-card-body">
                     <p><strong>Target Post:</strong> Chief Financial Officer</p>
-                    <p><strong>Current Title:</strong> Vice President Finance at <span id="preview-anon-comp">Leading Biotech Entity</span></p>
-                    <p><strong>Core Competencies:</strong> Private Placement, SEC compliance, M&A due diligence, Cross-border structuring.</p>
+                    <p><strong>Current Title:</strong> Vice President Finance at <span id="preview-anon-comp">Leading
+                        Biotech Entity</span></p>
+                    <p><strong>Core Competencies:</strong> Private Placement, SEC compliance, M&A due diligence,
+                      Cross-border structuring.</p>
                   </div>
                 </div>
               </div>
@@ -1446,7 +1755,7 @@
           <!-- TAB CONTENT: INTERVIEWS -->
           <div id="tab-user-interviews" class="dashboard-tab-content">
             <h3 class="tab-sec-title font-serif">Upcoming Scheduled Advisory Interviews</h3>
-            
+
             <div class="interviews-list">
               <div class="interview-item">
                 <div class="int-date font-serif">
@@ -1456,11 +1765,14 @@
                 <div class="int-details">
                   <h4 class="int-subject">Strategic Panel Interview | Sovereign Biotech Mandate</h4>
                   <p class="int-meta">Zoom Encrypted Bridge • 15:00 UTC (90 Minutes)</p>
-                  <p class="int-desc">Focus: Reviewing executive track record in FDA fast-track placement structures.</p>
+                  <p class="int-desc">Focus: Reviewing executive track record in FDA fast-track placement structures.
+                  </p>
                 </div>
                 <div class="int-actions">
-                  <button class="btn btn-secondary btn-sm" onclick="alert('Secure calendar link opened.')">Add to Calendar</button>
-                  <button class="btn btn-primary btn-sm" onclick="alert('Secure connection bridge is not active yet.')">Enter Portal Room</button>
+                  <button class="btn btn-secondary btn-sm" onclick="alert('Secure calendar link opened.')">Add to
+                    Calendar</button>
+                  <button class="btn btn-primary btn-sm"
+                    onclick="alert('Secure connection bridge is not active yet.')">Enter Portal Room</button>
                 </div>
               </div>
 
@@ -1475,7 +1787,8 @@
                   <p class="int-desc">Discussion lead: Victoria Sterling (Partner, Zurich Node).</p>
                 </div>
                 <div class="int-actions">
-                  <button class="btn btn-secondary btn-sm" onclick="alert('Calendar bridge established.')">Reschedule Request</button>
+                  <button class="btn btn-secondary btn-sm" onclick="alert('Calendar bridge established.')">Reschedule
+                    Request</button>
                 </div>
               </div>
             </div>
@@ -1490,12 +1803,12 @@
     <!-- VIEW: ADMIN DASHBOARD (ENTERPRISE/CLIENT PORTAL)           -->
     <!-- ======================================================= -->
     <div id="view-admin-dashboard" class="app-view dashboard-layout-view">
-      
+
       <!-- Split Dashboard Shell -->
       <div class="dashboard-shell-container">
         <!-- Sidebar Overlay for Mobile -->
         <div class="dashboard-sidebar-overlay" onclick="toggleDashboardSidebar()"></div>
-        
+
         <!-- Sidebar Panel (Fixed, not scrollable) -->
         <aside class="dashboard-sidebar">
           <div class="sidebar-top">
@@ -1520,11 +1833,11 @@
             </a>
             <!-- Recruiter Info -->
             <div class="sidebar-candidate-info">
-              <div class="candidate-avatar-stub" style="background-image: url('f12.jpg');"></div>
-              <div class="candidate-details">
+              <div class="candidate-details" style="flex-grow: 1;">
                 <h4 class="candidate-name font-serif">Victoria Sterling</h4>
                 <p class="candidate-sub">Senior Search Partner</p>
               </div>
+              <div class="candidate-avatar-stub" style="background-image: url('f12.jpg');"></div>
             </div>
           </div>
 
@@ -1533,19 +1846,30 @@
             <ul class="sidebar-nav-list">
               <li>
                 <a href="#" class="sidebar-nav-link active-nav" onclick="switchDashboardTab('admin-overview', event)">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="9"></rect><rect x="14" y="3" width="7" height="5"></rect><rect x="14" y="12" width="7" height="9"></rect><rect x="3" y="16" width="7" height="5"></rect></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="9"></rect>
+                    <rect x="14" y="3" width="7" height="5"></rect>
+                    <rect x="14" y="12" width="7" height="9"></rect>
+                    <rect x="3" y="16" width="7" height="5"></rect>
+                  </svg>
                   <span>Metrics</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="sidebar-nav-link" onclick="switchDashboardTab('admin-pipeline-board', event)">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="9" y1="3" x2="9" y2="21"></line>
+                    <line x1="15" y1="3" x2="15" y2="21"></line>
+                  </svg>
                   <span>Placements Board</span>
                 </a>
               </li>
               <li>
                 <a href="#" class="sidebar-nav-link" onclick="switchDashboardTab('admin-hidden-vault', event)">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
                   <span>Review Hidden Resumes</span>
                 </a>
               </li>
@@ -1554,7 +1878,11 @@
 
           <div class="sidebar-bottom">
             <a href="#" class="sidebar-nav-link exit-link" onclick="navigateTo('home-1', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                <polyline points="16 17 21 12 16 7"></polyline>
+                <line x1="21" y1="12" x2="9" y2="12"></line>
+              </svg>
               <span>Back to Site</span>
             </a>
           </div>
@@ -1562,7 +1890,7 @@
 
         <!-- Content Area (Scrollable) -->
         <main class="dashboard-content-area">
-          
+
           <!-- Top Bar inside Dashboard -->
           <div class="dashboard-topbar">
             <div class="dashboard-topbar-left">
@@ -1573,11 +1901,12 @@
               </button>
               <h2 class="dash-title font-serif">Enterprise Recruiter Analytics</h2>
             </div>
-            
+
             <div class="topbar-controls">
               <!-- Inline Dark/Light Toggle -->
               <button class="utility-btn theme-toggle dash-theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
                   <circle cx="12" cy="12" r="5"></circle>
                   <line x1="12" y1="1" x2="12" y2="3"></line>
                   <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -1588,13 +1917,15 @@
                   <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
                   <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                 </svg>
-                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
                   <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
               </button>
 
               <!-- Inline LTR/RTL Toggle -->
-              <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction" aria-label="Toggle Layout Direction">
+              <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction"
+                aria-label="Toggle Layout Direction">
                 <span>LTR</span>
               </button>
             </div>
@@ -1607,7 +1938,10 @@
               <div class="metric-card">
                 <div class="metric-head">
                   <span class="metric-lbl">Active Retained Mandates</span>
-                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
                 </div>
                 <div class="metric-value font-serif">14</div>
                 <div class="metric-trend positive">+2 this quarter</div>
@@ -1615,7 +1949,13 @@
               <div class="metric-card">
                 <div class="metric-head">
                   <span class="metric-lbl">Total Pre-Vetted Executives</span>
-                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
                 </div>
                 <div class="metric-value font-serif">842</div>
                 <div class="metric-trend positive">18 added this week</div>
@@ -1623,7 +1963,11 @@
               <div class="metric-card">
                 <div class="metric-head">
                   <span class="metric-lbl">Placement Success Rate</span>
-                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  <svg class="metric-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
                 </div>
                 <div class="metric-value font-serif">98.2%</div>
                 <div class="metric-trend positive">Highest in search industry</div>
@@ -1654,23 +1998,28 @@
                   </svg>
                 </div>
               </div>
-              
+
               <!-- Chart 2: Client Types Pie Chart -->
               <div class="chart-container-card">
                 <h3 class="chart-title font-serif">Active Retained Client Allocation</h3>
                 <div class="chart-wrapper flex-center">
                   <svg viewBox="0 0 200 200" class="svg-pie-chart" width="150" height="150">
                     <!-- Fortune 500 (50%) -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="var(--gold-color)" stroke-width="25" stroke-dasharray="251 502" stroke-dashoffset="0" />
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="var(--gold-color)" stroke-width="25"
+                      stroke-dasharray="251 502" stroke-dashoffset="0" />
                     <!-- Private Equity Portfolios (40%) -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(197, 160, 89, 0.5)" stroke-width="25" stroke-dasharray="201 502" stroke-dashoffset="-251" />
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(197, 160, 89, 0.5)" stroke-width="25"
+                      stroke-dasharray="201 502" stroke-dashoffset="-251" />
                     <!-- Venture-backed (10%) -->
-                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(128, 128, 128, 0.25)" stroke-width="25" stroke-dasharray="50 502" stroke-dashoffset="-452" />
+                    <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(128, 128, 128, 0.25)" stroke-width="25"
+                      stroke-dasharray="50 502" stroke-dashoffset="-452" />
                   </svg>
                   <div class="pie-legends">
                     <div class="legend-item"><span class="leg-color gold-bg"></span><span>Fortune 500 (50%)</span></div>
-                    <div class="legend-item"><span class="leg-color gold-half-bg"></span><span>PE Firms (40%)</span></div>
-                    <div class="legend-item"><span class="leg-color slate-bg"></span><span>VC Startups (10%)</span></div>
+                    <div class="legend-item"><span class="leg-color gold-half-bg"></span><span>PE Firms (40%)</span>
+                    </div>
+                    <div class="legend-item"><span class="leg-color slate-bg"></span><span>VC Startups (10%)</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1717,7 +2066,8 @@
           <!-- TAB CONTENT: PLACEMENTS BOARD -->
           <div id="tab-admin-pipeline-board" class="dashboard-tab-content">
             <h3 class="tab-sec-title font-serif">Executive Pipeline Board</h3>
-            <p class="tab-sec-desc">Active retained mandates tracking board. Click a candidate card to move their pipeline stage.</p>
+            <p class="tab-sec-desc">Active retained mandates tracking board. Click a candidate card to move their
+              pipeline stage.</p>
 
             <div class="kanban-board-wrapper">
               <div class="kanban-column" id="col-shortlist">
@@ -1735,7 +2085,7 @@
                   </div>
                 </div>
               </div>
-              
+
               <div class="kanban-column" id="col-interview">
                 <div class="col-header">Interviewing (1)</div>
                 <div class="kanban-cards-list">
@@ -1763,34 +2113,44 @@
           <!-- TAB CONTENT: REVIEW HIDDEN RESUMES -->
           <div id="tab-admin-hidden-vault" class="dashboard-tab-content">
             <h3 class="tab-sec-title font-serif">Anonymized Candidate Registries</h3>
-            <p class="tab-sec-desc">Browse hidden candidate profiles. Click "Request Identity" to notify the candidate for unmasking approval.</p>
+            <p class="tab-sec-desc">Browse hidden candidate profiles. Click "Request Identity" to notify the candidate
+              for unmasking approval.</p>
 
             <div class="hidden-resumes-grid">
               <div class="resume-row-item">
                 <div class="res-brief">
                   <h4>Candidate #CH-0988 (Anonymized)</h4>
                   <p class="res-meta">Target: COO / VP Operations • 18 Years Executive Experience</p>
-                  <p class="res-summary">Currently: VP Logistics at <em>[Anonymized Global Logistics Entity]</em>. Structured 200+ global supply chain nodes. Save $40m annually.</p>
+                  <p class="res-summary">Currently: VP Logistics at <em>[Anonymized Global Logistics Entity]</em>.
+                    Structured 200+ global supply chain nodes. Save $40m annually.</p>
                 </div>
-                <button class="btn btn-secondary btn-sm" onclick="alert('Identity request submitted securely to Candidate #CH-0988.')">Request Identity</button>
+                <button class="btn btn-secondary btn-sm"
+                  onclick="alert('Identity request submitted securely to Candidate #CH-0988.')">Request
+                  Identity</button>
               </div>
 
               <div class="resume-row-item">
                 <div class="res-brief">
                   <h4>Candidate #CH-1229 (Anonymized)</h4>
                   <p class="res-meta">Target: Chief Scientific Officer • MD/PhD Stanford Alumnus</p>
-                  <p class="res-summary">Currently: Senior Director Clinical Trials at <em>[Anonymized Tier 1 Biotech Firm]</em>. Expert in mRNA vectors development.</p>
+                  <p class="res-summary">Currently: Senior Director Clinical Trials at <em>[Anonymized Tier 1 Biotech
+                      Firm]</em>. Expert in mRNA vectors development.</p>
                 </div>
-                <button class="btn btn-secondary btn-sm" onclick="alert('Identity request submitted securely to Candidate #CH-1229.')">Request Identity</button>
+                <button class="btn btn-secondary btn-sm"
+                  onclick="alert('Identity request submitted securely to Candidate #CH-1229.')">Request
+                  Identity</button>
               </div>
 
               <div class="resume-row-item">
                 <div class="res-brief">
                   <h4>Candidate #CH-3881 (Anonymized)</h4>
                   <p class="res-meta">Target: CEO / Managing Partner • Wharton MBA Alumnus</p>
-                  <p class="res-summary">Currently: Lead Partner at <em>[Anonymized Private Equity Firm]</em>. Guided 12 successful IPO processes in tech space.</p>
+                  <p class="res-summary">Currently: Lead Partner at <em>[Anonymized Private Equity Firm]</em>. Guided 12
+                    successful IPO processes in tech space.</p>
                 </div>
-                <button class="btn btn-secondary btn-sm" onclick="alert('Identity request submitted securely to Candidate #CH-3881.')">Request Identity</button>
+                <button class="btn btn-secondary btn-sm"
+                  onclick="alert('Identity request submitted securely to Candidate #CH-3881.')">Request
+                  Identity</button>
               </div>
             </div>
           </div>
@@ -1808,7 +2168,8 @@
         <!-- Top Right Actions -->
         <div class="auth-top-actions">
           <button class="utility-btn theme-toggle dash-theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -1819,11 +2180,13 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
-          <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction" aria-label="Toggle Layout Direction">
+          <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction"
+            aria-label="Toggle Layout Direction">
             <span>LTR</span>
           </button>
         </div>
@@ -1865,16 +2228,28 @@
           </div>
 
           <div class="auth-social-group">
-            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.579-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 6.033 1 1 6.033 1 12.24s5.033 11.24 11.24 11.24c6.478 0 10.793-4.537 10.793-10.98 0-.742-.08-1.302-.178-1.859H12.24z"/></svg>
+            <button class="btn btn-secondary auth-social-btn btn-google" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.579-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 6.033 1 1 6.033 1 12.24s5.033 11.24 11.24 11.24c6.478 0 10.793-4.537 10.793-10.98 0-.742-.08-1.302-.178-1.859H12.24z" />
+              </svg>
               <span>Google</span>
             </button>
-            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <button class="btn btn-secondary auth-social-btn btn-facebook" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
               <span>Facebook</span>
             </button>
-            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" style="display:none"/><path d="M16.365 1.157c-1.077 0-2.26.544-2.916 1.258-.6.653-1.09 1.638-.934 2.58.995.05 2.05-.444 2.705-1.144.622-.656 1.077-1.677.925-2.617C15.86 1.22 15.65 1.22 15.6 1.22M15.842 16.79c-1.127.065-2.075-1.39-2.075-1.39s-.91 1.41-2.096 1.34c-1.14-.065-2.222-1.096-2.85-2.504-1.294-2.856-.376-7.098 1.942-7.234 1.125-.065 2.046 1.09 2.046 1.09s.85-1.143 2.05-1.09c1.2.054 2.22 1.096 2.22 1.096s-1.01 1.09-1.056 3.197c-.05 2.112 1.967 2.946 1.967 2.946s-1.076 2.483-2.148 2.55"/></svg>
+            <button class="btn btn-secondary auth-social-btn btn-apple" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"
+                  style="display:none" />
+                <path
+                  d="M16.365 1.157c-1.077 0-2.26.544-2.916 1.258-.6.653-1.09 1.638-.934 2.58.995.05 2.05-.444 2.705-1.144.622-.656 1.077-1.677.925-2.617C15.86 1.22 15.65 1.22 15.6 1.22M15.842 16.79c-1.127.065-2.075-1.39-2.075-1.39s-.91 1.41-2.096 1.34c-1.14-.065-2.222-1.096-2.85-2.504-1.294-2.856-.376-7.098 1.942-7.234 1.125-.065 2.046 1.09 2.046 1.09s.85-1.143 2.05-1.09c1.2.054 2.22 1.096 2.22 1.096s-1.01 1.09-1.056 3.197c-.05 2.112 1.967 2.946 1.967 2.946s-1.076 2.483-2.148 2.55" />
+              </svg>
               <span>Apple</span>
             </button>
           </div>
@@ -1894,7 +2269,8 @@
         <!-- Top Right Actions -->
         <div class="auth-top-actions">
           <button class="utility-btn theme-toggle dash-theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
-            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <circle cx="12" cy="12" r="5"></circle>
               <line x1="12" y1="1" x2="12" y2="3"></line>
               <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -1905,11 +2281,13 @@
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
             </svg>
-            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
-          <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction" aria-label="Toggle Layout Direction">
+          <button class="utility-btn direction-toggle dash-direction-toggle" title="Toggle Layout Direction"
+            aria-label="Toggle Layout Direction">
             <span>LTR</span>
           </button>
         </div>
@@ -1959,16 +2337,28 @@
           </div>
 
           <div class="auth-social-group">
-            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.579-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 6.033 1 1 6.033 1 12.24s5.033 11.24 11.24 11.24c6.478 0 10.793-4.537 10.793-10.98 0-.742-.08-1.302-.178-1.859H12.24z"/></svg>
+            <button class="btn btn-secondary auth-social-btn btn-google" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.24 10.285V13.4h6.887c-.275 1.565-1.88 4.604-6.887 4.604-4.33 0-7.859-3.579-7.859-8s3.53-8 7.859-8c2.46 0 4.105 1.025 5.047 1.926l2.427-2.334C17.955 2.192 15.34 1 12.24 1 6.033 1 1 6.033 1 12.24s5.033 11.24 11.24 11.24c6.478 0 10.793-4.537 10.793-10.98 0-.742-.08-1.302-.178-1.859H12.24z" />
+              </svg>
               <span>Google</span>
             </button>
-            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <button class="btn btn-secondary auth-social-btn btn-facebook" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
               <span>Facebook</span>
             </button>
-            <button class="btn btn-secondary auth-social-btn" onclick="navigateTo('user-dashboard', event)">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z" style="display:none"/><path d="M16.365 1.157c-1.077 0-2.26.544-2.916 1.258-.6.653-1.09 1.638-.934 2.58.995.05 2.05-.444 2.705-1.144.622-.656 1.077-1.677.925-2.617C15.86 1.22 15.65 1.22 15.6 1.22M15.842 16.79c-1.127.065-2.075-1.39-2.075-1.39s-.91 1.41-2.096 1.34c-1.14-.065-2.222-1.096-2.85-2.504-1.294-2.856-.376-7.098 1.942-7.234 1.125-.065 2.046 1.09 2.046 1.09s.85-1.143 2.05-1.09c1.2.054 2.22 1.096 2.22 1.096s-1.01 1.09-1.056 3.197c-.05 2.112 1.967 2.946 1.967 2.946s-1.076 2.483-2.148 2.55"/></svg>
+            <button class="btn btn-secondary auth-social-btn btn-apple" onclick="navigateTo('user-dashboard', event)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12c0-5.523-4.477-10-10-10z"
+                  style="display:none" />
+                <path
+                  d="M16.365 1.157c-1.077 0-2.26.544-2.916 1.258-.6.653-1.09 1.638-.934 2.58.995.05 2.05-.444 2.705-1.144.622-.656 1.077-1.677.925-2.617C15.86 1.22 15.65 1.22 15.6 1.22M15.842 16.79c-1.127.065-2.075-1.39-2.075-1.39s-.91 1.41-2.096 1.34c-1.14-.065-2.222-1.096-2.85-2.504-1.294-2.856-.376-7.098 1.942-7.234 1.125-.065 2.046 1.09 2.046 1.09s.85-1.143 2.05-1.09c1.2.054 2.22 1.096 2.22 1.096s-1.01 1.09-1.056 3.197c-.05 2.112 1.967 2.946 1.967 2.946s-1.076 2.483-2.148 2.55" />
+              </svg>
               <span>Apple</span>
             </button>
           </div>
@@ -2005,7 +2395,8 @@
             </div>
           </a>
         </div>
-        <p class="footer-text">A sovereign, globally retained leadership search advisory. We connect legendary executive candidates with mission-critical corporate boards.</p>
+        <p class="footer-text">A sovereign, globally retained leadership search advisory. We connect legendary executive
+          candidates with mission-critical corporate boards.</p>
         <div class="footer-contacts">
           <p><strong>Zurich Office:</strong> Bahnhofstrasse 12 • +41 44 211 4000</p>
           <p><strong>London Node:</strong> 30 St Mary Axe • +44 20 7946 0911</p>
@@ -2034,10 +2425,11 @@
         </ul>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <div class="container footer-bottom-flex">
-        <p class="copyright">&copy; 2026 VERTEX Search Group. All Sovereign Rights Reserved. Cryptographic data residency: Switzerland.</p>
+        <p class="copyright">&copy; 2026 VERTEX Search Group. All Sovereign Rights Reserved. Cryptographic data
+          residency: Switzerland.</p>
         <div class="footer-legal-links">
           <a href="#" onclick="navigateTo('contact', event)">Disclaimers</a>
           <a href="#" onclick="navigateTo('contact', event)">Encrypted PGP Keys</a>
@@ -2049,4 +2441,5 @@
   <!-- Main JS Logic -->
   <script src="app.js"></script>
 </body>
+
 </html>

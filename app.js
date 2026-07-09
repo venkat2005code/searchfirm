@@ -14,11 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ==========================================
    1. NAVIGATION & SPA ROUTING STATE
    ========================================== */
-function navigateTo(viewId, event) {
+function navigateTo(rawViewId, event) {
   if (event) event.preventDefault();
 
   // Close dashboard sidebar if open
   closeDashboardSidebar();
+
+  const viewId = rawViewId;
 
   // 1. Hide all views, remove active classes
   const views = document.querySelectorAll('.app-view');
@@ -45,7 +47,7 @@ function navigateTo(viewId, event) {
   }
 
   // 4. Update Header Nav Active state
-  updateHeaderActiveLink(viewId);
+  updateHeaderActiveLink(rawViewId);
 
   // 5. Close Mobile Menu if open
   closeMobileMenu();
