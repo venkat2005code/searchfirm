@@ -808,7 +808,7 @@ body.dashboard-active .app-viewport {
 .sector-card {
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), var(--card-bg-img) !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.55) 40%, rgba(0, 0, 0, 0.82) 100%), var(--card-bg-img) !important;
   border: 1px solid rgba(197, 160, 89, 0.2) !important;
   padding: 60px 40px;
   position: relative;
@@ -828,18 +828,21 @@ body.dashboard-active .app-viewport {
 .sector-icon {
   color: var(--gold-color);
   margin-bottom: 25px;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8));
 }
 
 .sector-name {
   font-size: 2rem;
   margin-bottom: 15px;
   color: #ffffff !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .sector-desc {
   font-size: 0.95rem;
-  color: #a1a1aa !important;
+  color: #d4d4d8 !important;
   margin-bottom: 25px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
 }
 
 .sector-placements {
@@ -2898,37 +2901,116 @@ body.dashboard-active .app-viewport {
     gap: 30px;
   }
   
+  /* Dashboard Sidebar: Off-Canvas Hamburger Drawer at ≤1024px */
+  .dashboard-shell-container {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    flex-direction: row;
+  }
+
   .dashboard-sidebar {
-    width: 80px;
-    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px !important;
+    height: 100vh !important;
+    z-index: 1100;
+    background-color: var(--bg-deep) !important;
+    border-right: 1px solid var(--border-color) !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 30px 20px !important;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-lg);
   }
-  
-  .dashboard-sidebar .logo-text-wrapper,
-  .dashboard-sidebar .sidebar-candidate-info .candidate-details,
-  .dashboard-sidebar .sidebar-nav-link span {
-    display: none;
+
+  [dir="rtl"] .dashboard-sidebar {
+    left: auto;
+    right: 0;
+    border-right: none !important;
+    border-left: 1px solid var(--border-color) !important;
+    transform: translateX(100%);
   }
-  
-  .dashboard-sidebar .sidebar-logo {
-    justify-content: center;
+
+  .dashboard-sidebar.sidebar-open {
+    transform: translateX(0) !important;
   }
-  
-  
+
+  .dashboard-sidebar .sidebar-top {
+    position: relative;
+    display: block !important;
+    width: 100%;
+    margin-bottom: 35px !important;
+  }
+
   .dashboard-sidebar .sidebar-candidate-info {
-    justify-content: center;
-    padding: 10px 0;
+    display: flex !important;
+    justify-content: flex-start !important;
+    padding: 15px 10px !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid var(--border-color) !important;
+    margin-top: 15px;
   }
-  
+
+  .dashboard-sidebar .sidebar-candidate-info .candidate-details {
+    display: block !important;
+  }
+
+  .dashboard-sidebar .logo-text-wrapper {
+    display: flex !important;
+  }
+
+  .dashboard-sidebar .sidebar-logo {
+    justify-content: flex-start !important;
+    margin-bottom: 25px !important;
+  }
+
+  .dashboard-sidebar .sidebar-nav {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  .dashboard-sidebar .sidebar-nav-list {
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-top: 0 !important;
+  }
+
   .dashboard-sidebar .sidebar-nav-link {
-    justify-content: center !important;
-    padding: 15px 0 !important;
-    gap: 0 !important;
+    justify-content: flex-start !important;
+    padding: 12px 15px !important;
+    gap: 12px !important;
   }
-  
-  .dashboard-sidebar .nav-badge {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+
+  .dashboard-sidebar .sidebar-nav-link span {
+    display: inline !important;
+  }
+
+  .dashboard-sidebar .sidebar-bottom {
+    display: block !important;
+  }
+
+  .dashboard-content-area {
+    padding: 20px !important;
+    overflow-y: auto !important;
+    height: 100vh !important;
+    width: 100% !important;
+  }
+
+  .dashboard-menu-btn {
+    display: flex !important;
+  }
+
+  .dashboard-close-btn {
+    display: flex !important;
+  }
+
+  .dashboard-sidebar-overlay {
+    display: block !important;
   }
   
   .dash-charts-row {
@@ -2994,6 +3076,8 @@ body.dashboard-active .app-viewport {
     width: auto;
   }
 }
+
+
 
 @media (max-width: 768px) {
   .insights-grid {
@@ -3097,127 +3181,6 @@ body.dashboard-active .app-viewport {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  /* Mobile Dashboard Off-Canvas Drawer Layout */
-  .dashboard-shell-container {
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    flex-direction: row;
-  }
-  
-  .dashboard-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 280px !important;
-    height: 100vh !important;
-    z-index: 1100;
-    background-color: var(--bg-deep) !important;
-    border-right: 1px solid var(--border-color) !important;
-    border-left: none !important;
-    border-bottom: none !important;
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 30px 20px !important;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    transform: translateX(-100%);
-    box-shadow: var(--shadow-lg);
-  }
-  
-  [dir="rtl"] .dashboard-sidebar {
-    left: auto;
-    right: 0;
-    border-right: none !important;
-    border-left: 1px solid var(--border-color) !important;
-    transform: translateX(100%);
-  }
-  
-  .dashboard-sidebar.sidebar-open {
-    transform: translateX(0) !important;
-  }
-  
-  .dashboard-sidebar .sidebar-top {
-    position: relative;
-    display: block !important;
-    width: 100%;
-    margin-bottom: 35px !important;
-  }
-  
-  .dashboard-sidebar .sidebar-candidate-info {
-    display: flex !important;
-    padding: 15px 10px !important;
-    background-color: rgba(255, 255, 255, 0.03) !important;
-    border: 1px solid var(--border-color) !important;
-    margin-top: 15px;
-  }
-  
-  .dashboard-sidebar .sidebar-candidate-info .candidate-details {
-    display: block !important;
-  }
-  
-  .dashboard-sidebar .logo-text-wrapper {
-    display: flex !important;
-  }
-  
-  .dashboard-sidebar .sidebar-logo {
-    margin-bottom: 25px !important;
-  }
-  
-  .dashboard-sidebar .sidebar-nav {
-    width: 100% !important;
-    margin-top: 0 !important;
-  }
-  
-  .dashboard-sidebar .sidebar-nav-list {
-    flex-direction: column !important;
-    gap: 8px !important;
-    margin-top: 0 !important;
-  }
-  
-  .dashboard-sidebar .sidebar-nav-link {
-    justify-content: flex-start !important;
-    padding: 12px 15px !important;
-  }
-  
-  .dashboard-sidebar .sidebar-nav-link span {
-    display: inline !important;
-  }
-  
-  .dashboard-sidebar .sidebar-bottom {
-    display: block !important;
-  }
-  
-  .dashboard-content-area {
-    padding: 20px !important;
-    overflow-y: auto !important;
-    height: 100vh !important;
-    width: 100% !important;
-  }
-  
-  .dashboard-topbar {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 15px !important;
-    padding-bottom: 15px !important;
-  }
-
-  .dash-title {
-    font-size: 1.5rem !important;
-  }
-
-  .dashboard-menu-btn {
-    display: flex !important;
-  }
-
-  .dashboard-close-btn {
-    display: flex !important;
-  }
-
-  .dashboard-sidebar-overlay {
-    display: block !important;
-  }
-
 
 
   /* Grid Stackings for Mobile */
